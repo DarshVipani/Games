@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Hangman.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+
+    <div class="game-model">
+        <div class="content">
+            <img src="./images/lost.gif" alt="">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>Rainbow</b></p>
+            <button class="play-again" onclick="()=>{console.log('clicked')}">Play Again</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hangman-box" id="hangman">
+            <img src="./images/hangman-0.svg" alt="">
+            <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+
+            <ul class="word-display"></ul>
+
+            <h4 class="hint-text" id="hint">
+                Hint:
+                <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b>
+            </h4>
+            <h4 class="guess-text">
+                Incorrect guesses:
+                <b>0 / 6 </b>
+            </h4>
+
+            <div class="keyboard">
+                <button onclick="display('a')">a</button><button onclick="display('b')">b</button><button onclick="display('c')">c</button><button onclick="display('d')">d</button>
+                <button onclick="display('e')">e</button><button onclick="display('f')">f</button><button onclick="display('g')">g</button><button onclick="display('h')">h</button>
+                <button onclick="display('i')">i</button><button onclick="display('j')">j</button><button onclick="display('k')">k</button><button onclick="display('l')">l</button>
+                <button onclick="display('m')">m</button><button onclick="display('n')">n</button><button onclick="display('o')">o</button><button onclick="display('p')">p</button>
+                <button onclick="display('q')">q</button><button onclick="display('r')">r</button><button onclick="display('s')">s</button><button onclick="display('t')">t</button>
+                <button onclick="display('u')">u</button><button onclick="display('v')">v</button><button onclick="display('w')">w</button><button onclick="display('x')">x</button>
+                <button onclick="display('y')">y</button><button onclick="display('z')">z</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="wordlist.js"></script>
+    <script src="Hangman.js"></script>
+</body>
+</html>
